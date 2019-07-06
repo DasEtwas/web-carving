@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #1abc9c, #34495e);
+  scrollbar-color: hsl(0, 0%, 46%) hsl(0, 0%, 30%);
+  font-family: 'Montserrat', 'Verdana', 'Tahoma', 'Gill Sans MT', sans-serif;
+}
+
+#container {
+  max-width: 80vw;
+  background-color: hsl(0, 0%, 14%);
+  border-radius: 2px;
+  box-shadow: 2px 2px 24px hsla(0, 0%, 8%, .3);
+  padding-bottom: 3vh;
+  animation: .65s containerIn ease;
+}
+@keyframes containerIn {
+  0% {
+    opacity: 0;
+    transform: scale(.94);
+  }
+  25% {
+    transform: scaleX(1.035) scaleY(1.03);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(.98) scaleY(.99);
+  }
+  75% {
+    opacity: 1;
+    transform: scaleX(1.01) scaleY(1.005);
+  }
+}
+
+#heading {
+  margin: 0 0 .4em;
+  padding: 3vh 3vw .25em;
+  background-color: hsl(0, 0%, 16%);
+  color: hsl(0, 0%, 80%);
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  min-height: 2.8rem;
+  padding: .5rem 1.2rem;
+  border-radius: 25px;
+  box-shadow: 1px 1px 12px hsla(0, 0%, 12%, .15);
+  box-sizing: border-box;
+}
+
+#input {
+  font-size: 1.4em;
+  background-color: hsl(0, 0%, 26%);
+  color: hsl(0, 0%, 85%);
+  border: none;
+  transition: all .15s ease;
+}
+#input:focus {
+  outline: none;
+  background-color: hsl(0, 0%, 27.8%);
+  box-shadow: 2px 2px 18px hsla(0, 0%, 10%, .25);
+}
+#input::placeholder {
+  color: hsl(0, 0%, 70%);
+}
+#input::-moz-placeholder {
+  color: hsl(0, 0%, 70%);
+}
+#input::-webkit-input-placeholder {
+  color: hsl(0, 0%, 70%);
+}
+#input::-ms-input-placeholder {
+  color: hsl(0, 0%, 70%);
+}
+#input:-ms-input-placeholder {
+  color: hsl(0, 0%, 70%);
+}
+
+#output {
+  max-height: 50vh;
+  overflow: auto;
+  margin-top: 1rem;
+  font-size: 1.1em;
+  background-color: hsl(0, 0%, 22%);
+  color: hsl(0, 0%, 75%);
+  user-select: all;
+  -ms-user-select: all;
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
