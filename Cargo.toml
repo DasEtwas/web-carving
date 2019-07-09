@@ -9,4 +9,4 @@ edition = "2018"
 [dependencies]
 yew = "0.6.0"
 stdweb = "0.4.17"
-image = { version = "0.21.0", default-features = false, features = ["png_codec"] }
+image = { version = "0.21.0" }
